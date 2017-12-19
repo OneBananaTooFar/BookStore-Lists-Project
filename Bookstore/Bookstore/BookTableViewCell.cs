@@ -13,8 +13,13 @@ namespace Bookstore
             get { return bookData; }
 			set {
                 bookData = value;
-            }
 
+                labelName.Text = bookData.Name;
+                labelYear.Text = bookData.Year.ToString();
+                labelAuthor.Text = bookData.Author;
+                labelPublisher.Text = bookData.Publisher;
+            
+            }
 		}
 
 
