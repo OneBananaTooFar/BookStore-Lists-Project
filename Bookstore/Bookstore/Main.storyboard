@@ -68,6 +68,7 @@
                                     <outlet property="labelAuthor" destination="410" id="name-outlet-410"/>
                                     <outlet property="labelYear" destination="411" id="name-outlet-411"/>
                                     <outlet property="labelPublisher" destination="412" id="name-outlet-412"/>
+                                    <segue id="2376" destination="1983" kind="show" identifier="DetailsSegue"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -76,7 +77,7 @@
                             <outlet property="delegate" destination="198" id="201"/>
                         </connections>
                     </tableView>
-                    <navigationItem title="Title" id="1963" key="navigationItem"/>
+                    <navigationItem title="Book Store" id="1963" key="navigationItem"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="204" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,9 +98,54 @@
             </objects>
             <point key="canvasLocation" x="-15" y="7"/>
         </scene>
+        <scene sceneID="1982">
+            <objects>
+                <viewController id="1983" sceneMemberID="viewController" customClass="DetailsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1980"/>
+                        <viewControllerLayoutGuide type="bottom" id="1981"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1984">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2591" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="561" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2592" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="65" width="375" height="469"/>
+                            </imageView>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2591"/>
+                                <exclude reference="2592"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2591"/>
+                                <include reference="2592"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1985" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="7"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>
         <simulatedOrientationMetrics key="orientation"/>
     </simulatedMetricsContainer>
+    <resources>
+        <image name="Image/HPCOS.jpg" width="250" height="385"/>
+        <image name="Image/HPPOA.jpg" width="600" height="898"/>
+        <image name="Image/HPSS.jpg" width="324" height="499"/>
+    </resources>
 </document>
