@@ -5,7 +5,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Bookstore/BooksTableViewController.cs">
     <Files>
       <File FileName="Bookstore/Main.storyboard" />
-      <File FileName="Bookstore/BooksTableViewController.cs" Line="59" Column="25" />
+      <File FileName="Bookstore/BooksTableViewController.cs" Line="80" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

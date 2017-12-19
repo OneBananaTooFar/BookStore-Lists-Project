@@ -57,7 +57,7 @@ namespace Bookstore
             cell.TextLabel.Text = data.Name;
 
             return cell;
-        }
+        }kk
     
         }
        
@@ -77,4 +77,4 @@ namespace Bookstore
 
     }
 
-lllll
+k
