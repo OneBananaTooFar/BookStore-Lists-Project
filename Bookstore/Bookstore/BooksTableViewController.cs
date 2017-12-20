@@ -72,7 +72,7 @@ namespace Bookstore
                 {
                     var rowPath = TableView.IndexPathForSelectedRow;
                     var selectedData = bookList[rowPath.Row];
-
+                    navigationController.selectedBook = selectedData;
                 }
 
             }
@@ -100,4 +100,3 @@ namespace Bookstore
 
     }
 
-kk
